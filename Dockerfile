@@ -1,7 +1,3 @@
-# Docker NGINX RTMP
-#
-# Provides NGINX-RTMP on FFMPEG Ubuntu Base
-
 FROM konwilms/docker-ubuntu-ffmpeg
 MAINTAINER Konstantin Wilms <kon@geopacket.com>
 
