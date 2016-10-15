@@ -45,7 +45,7 @@ RUN cd ffmpeg && ./configure --prefix="/ffmpeg_build" --extra-cflags="-I/ffmpeg_
 RUN cd ffmpeg && make && make install && make distclean && hash -r
 
 WORKDIR /home/nginx/
-ENV NGINX_VER 1.7.1
+ENV NGINX_VER 1.9.9
 
 RUN apt-get -y install libpcre3-dev libssl-dev
 
