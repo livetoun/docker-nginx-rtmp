@@ -9,7 +9,7 @@ RUN sudo apt-get -y install unzip git wget autoconf automake build-essential lib
     libtheora-dev libtool libvorbis-dev libxfixes-dev pkg-config texi2html zlib1g-dev
 
 # yasm
-# RUN sudo apt-get install yasm
+RUN apt-get install yasm
 
 # x264
 RUN wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
