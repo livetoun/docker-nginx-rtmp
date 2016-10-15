@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER Konstantin Wilms <kon@geopacket.com>
 
-ENV LIBVPX_VER 1.3.0
+ENV LIBVPX_VER 1.5.0
 
 RUN apt-get update
 
