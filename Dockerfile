@@ -1,4 +1,4 @@
-FROM kon/docker-ubuntu-ffmpeg
+FROM github.com/livetoun/docker-ubuntu-ffmpeg
 MAINTAINER Konstantin Wilms <kon@geopacket.com>
 
 WORKDIR /home/nginx/
