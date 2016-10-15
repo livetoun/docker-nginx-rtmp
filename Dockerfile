@@ -47,7 +47,7 @@ RUN cd ffmpeg && make && make install && make distclean && hash -r
 WORKDIR /home/nginx/
 ENV NGINX_VER 1.7.1
 
-RUN sudo apt-get -y install libpcre3-dev libssl-dev
+RUN apt-get -y install libpcre3-dev libssl-dev
 
 RUN groupadd nginx
 RUN useradd -m -g nginx nginx
