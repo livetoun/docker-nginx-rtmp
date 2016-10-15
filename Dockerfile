@@ -29,9 +29,11 @@ RUN apt-get install -y libmp3lame-dev
 RUN apt-get install -y libopus-dev
 
 # libvpx
-RUN wget http://webm.googlecode.com/files/libvpx-v${LIBVPX_VER}.tar.bz2 && tar xjvf libvpx-v${LIBVPX_VER}.tar.bz2
-RUN cd libvpx-v${LIBVPX_VER} && ./configure --prefix="/ffmpeg_build" --disable-examples
-RUN cd libvpx-v${LIBVPX_VER} && make && make install && make clean
+#RUN wget http://webm.googlecode.com/files/libvpx-v${LIBVPX_VER}.tar.bz2 && tar xjvf libvpx-v${LIBVPX_VER}.tar.bz2
+RUN wget http://storage.googleapis.com/downloads.webmproject.org/releases/webm/libvpx-${LIBVPX_VER}.tar.bz2 && tar xjvf libvpx-${LIBVPX_VER}.tar.bz2
+
+RUN cd libvpx-${LIBVPX_VER} && ./configure --prefix="/ffmpeg_build" --disable-examples
+RUN cd libvpx-${LIBVPX_VER} && make && make install && make clean
 
 # ffmpeg
 RUN wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && tar xjvf ffmpeg-snapshot.tar.bz2
