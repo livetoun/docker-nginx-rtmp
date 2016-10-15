@@ -1,4 +1,4 @@
-FROM konwilms/docker-ubuntu-ffmpeg
+FROM kon/docker-ubuntu-ffmpeg
 MAINTAINER Konstantin Wilms <kon@geopacket.com>
 
 WORKDIR /home/nginx/
