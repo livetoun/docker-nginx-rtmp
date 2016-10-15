@@ -3,9 +3,9 @@ MAINTAINER Konstantin Wilms <kon@geopacket.com>
 
 ENV LIBVPX_VER 1.3.0
 
-RUN sudo apt-get update
+RUN apt-get update
 
-RUN sudo apt-get -y install unzip git wget autoconf automake build-essential libass-dev libfreetype6-dev libgpac-dev \
+RUN apt-get -y install unzip git wget autoconf automake build-essential libass-dev libfreetype6-dev libgpac-dev \
     libtheora-dev libtool libvorbis-dev libxfixes-dev pkg-config texi2html zlib1g-dev
 
 # yasm
